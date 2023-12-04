@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-mRCVjw7U5rAI7JHEwIYJ2UM6uVoYsEMopp4l91upjHH6FkisqbJmb2N6uS6oOSBdg"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Font families -->
+
+    <!-- Custom CSS Styles-->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./custom-font.css" />
+    <!-- Bootstrap js and jQuery-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom js for slider-->
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+    <title>Modality</title>
+  </head>
+  <body>
+    <header class="header-container main-container row">
+      <nav class="navbar navbar-expand-lg rm-pd">
+        <div class="header-logo col-md-3 rm-pd">
+          <h1><a href="#">Modality</a></h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="navbarToggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="collapse navbar-collapse categories-container col-md-6 rm-pd"
+          id="navbarNav"
+        >
+          <nav class="categories">
+            <ul class="navbar-nav list-inline">
+              <li class="list-inline-item">
+                <a class="goto" href="./index.html" data-category="discover"
+                  >Discover</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a class="goto" href="#" data-category="get-training"
+                  >Get Training</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a class="goto" href="#" data-category="about-modality"
+                  >About Modality</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="profile-container mobile col-md-3 rm-pd">
+            <div class="mobile-profile">
+              <div class="profile">
+                <img src="./images/profile.png" alt="profile" />
+              </div>
+              <div class="name">
+                <h4>Jadis Montijo</h4>
+                <!-- <img src="./images/down.svg" alt="chevron" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-container col-md-3 rm-pd">
+          <div class="profile">
+            <img src="./images/profile.png" alt="profile" />
+          </div>
+          <div class="name">
+            <h4>Jadis Montijo</h4>
+            <img src="./images/down.svg" alt="chevron" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="add-profile-container row body-content">
+      <div
+        class="starter-notification notification profile-notification col-md-8 rm-pd"
+      >
+        <div class="notification-container">
+          <div class="close-notification">
+            <button
+              type="button"
+              class="btn-close-notification"
+              aria-label="Close"
+              id="closeNotificationBtn"
+            >
+              X
+            </button>
+          </div>
+          <div class="notification-label">
+            <p class="lg-p">Your profile draft has been generated!</p>
+          </div>
+          <div class="notification-description">
+            <p class="sm-p mt-3">
+              Before you publish it, we can help you make more adjustments using
+              AI
+            </p>
+            <p class="sm-p mt-3">
+              See a section that isn't quite right? You can click "edit section"
+              to either manually edit or re-generate that section with the AI
+              helper.
+            </p>
+          </div>
+          <div class="starter-notification-buttons">
+            <button
+              type="button"
+              class="btn-modal-white-outline md-p"
+              data-bs-dismiss="modal"
+            >
+              Regenerate entire profile
+            </button>
+            <button type="button" id="generateBtn" class="btn-modal-white md-p">
+              Publish profile
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="profile-title col-md-8">
+        <h1>Trans & Entrepreur Support</h1>
+        <div class="share-links-container">
+          <p class=".md-p">
+            <img class="img-icon" src="./images/share.png" alt="" />
+            <a href="#">Share my profile</a>
+          </p>
+          <p class=".md-p">
+            <img class="img-icon" src="./images/view.png" alt="" />
+            <a href="#">View my public profile</a>
+          </p>
+        </div>
+        <div class="upload-profile-container">
+          <div class="update-picture">
+            <div class="custom-file">
+              <input
+                type="file"
+                class="custom-file-input upload-file"
+                id="profileImage"
+              />
+            </div>
+          </div>
+          <div class="profile-details">
+            <div class="name"><h2>Jadis Montijo</h2></div>
+            <div class="details">
+              <i class="fas fa-user-alt"></i>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#addDetails">
+                <p class="sm-p">He/him</p>
+              </a>
+            </div>
+            <div class="details">
+              <i class="fas fa-map-marker-alt"></i>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#addDetails">
+                <p class="sm-p">Remote/New York, NY</p>
+              </a>
+            </div>
+            <div class="additional-profile-tag-wrapper">
+              <div class="additional-profile-tag-links">
+                <a class="link-outfit tag-light" href="#">
+                  <p>Gender Identity Exploration</p>
+                </a>
+                <a class="link-outfit tag-light" href="#">
+                  <p>Transition Support</p>
+                </a>
+                <a class="link-outfit tag-medium" href="#">
+                  <p>Leadership and Management</p>
+                </a>
+              </div>
+              <div class="intro-text mt-3">
+                <p class=".md-p">
+                  I'm Jadis, a wellness worker specializing in gender
+                  transitions. Let me be your trusted companion, providing
+                  paractical resources and emotional support on your path to
+                  self-discovery and authentic living.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edit-profile-container">
+          <div class="multi-action">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#addDetails">
+              <div class="action">
+                <p class="md-p">Edit Intro Section</p>
+                <div class="image-container">
+                  <i class="fas fa-edit plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category-wise-container">
+      <div class="options">
+        <p class="lg-p"><a href="#">Offerings</a></p>
+        <p class="lg-p"><a href="#">Values</a></p>
+        <p class="lg-p"><a href="#">Background</a></p>
+        <p class="lg-p"><a href="#">Testimonials</a></p>
+        <p class="lg-p"><a href="#">Resources</a></p>
+        <p class="lg-p"><a href="#">Scope of Practice</a></p>
+      </div>
+    </section>
+    <section class="all-categories-container">
+      <div class="all-categories">
+        <div class="action-container">
+          <h4>Offerings</h4>
+          <p class="sm-p mt-3">
+            Instructions for filling out this section and why it is valuable
+          </p>
+          <div class="multi-action">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#addOfferings">
+              <div class="action">
+                <p class="md-p">Add an offering</p>
+                <div class="image-container">
+                  <i class="fas fa-plus plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="edit-offering-container mt-3">
+            <div class="edit-offer">
+              <div class="offer-header">
+                <div class="offer-header-content">
+                  <h4>Free Consultation</h4>
+                  <p class="xs-p">
+                    Want to learn more about my services? Have a question? Book
+                    a free 10-minute intro consultation with me.
+                  </p>
+                </div>
+                <div class="offer-header-timestamp">
+                  <div class="details">
+                    <i class="fas fa-hourglass"></i>
+
+                    <p class="xs-p">10 mins</p>
+                  </div>
+                  <div class="details">
+                    <i class="fas fa-sliders-h"></i>
+
+                    <p class="xs-p">Sliding Scale</p>
+                  </div>
+                  <div class="edit-profile-container">
+                    <div class="multi-action">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#">
+                        <div class="action">
+                          <p class="md-p">Edit offering</p>
+                          <div class="image-container">
+                            <i class="fas fa-edit plus-icon"></i>
+                            <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-description">
+                <div class="content">
+                  <p class="xs-p">
+                    My services cater to educators and professionals who are
+                    committed to creating inclusive classrooms, supporting
+                    diverse learners, and enhancing their teaching practices to
+                    meet the needs of all students.
+                  </p>
+                </div>
+                <div class="content">
+                  <li class="xs-p">
+                    Visual strategies to Promote Communication
+                  </li>
+                  <li class="xs-p">
+                    Integrating a Child with Special Needs into The Classroom
+                  </li>
+                  <li class="xs-p">
+                    Autism Spectrum Disorders: Learning Styles and Interventions
+                  </li>
+                  <li class="xs-p">
+                    All Behavior Is Communication: Functional Analysis and
+                    Behavior Interventions
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-offering-container mt-3">
+            <div class="edit-offer">
+              <div class="offer-header">
+                <div class="offer-header-content">
+                  <h4>Trans Support</h4>
+                  <p class="xs-p">
+                    Provide teachers with practical strategies to support
+                    srudents with diverse needs and create inclusive classroom
+                    environments.
+                  </p>
+                </div>
+                <div class="offer-header-timestamp">
+                  <div class="details">
+                    <i class="fas fa-hourglass"></i>
+
+                    <p class="xs-p">10 mins</p>
+                  </div>
+                  <div class="details">
+                    <i class="fas fa-sliders-h"></i>
+
+                    <p class="xs-p">Sliding Scale</p>
+                  </div>
+                  <div class="edit-profile-container">
+                    <div class="multi-action">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#">
+                        <div class="action">
+                          <p class="md-p">Edit offering</p>
+                          <div class="image-container">
+                            <i class="fas fa-edit plus-icon"></i>
+                            <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-description">
+                <div class="content">
+                  <p class="xs-p">
+                    My services cater to educators and professionals who are
+                    committed to creating inclusive classrooms, supporting
+                    diverse learners, and enhancing their teaching practices to
+                    meet the needs of all students.
+                  </p>
+                </div>
+                <div class="content">
+                  <li class="xs-p">
+                    Visual strategies to Promote Communication
+                  </li>
+                  <li class="xs-p">
+                    Integrating a Child with Special Needs into The Classroom
+                  </li>
+                  <li class="xs-p">
+                    Autism Spectrum Disorders: Learning Styles and Interventions
+                  </li>
+                  <li class="xs-p">
+                    All Behavior Is Communication: Functional Analysis and
+                    Behavior Interventions
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-offering-container mt-3">
+            <div class="edit-offer">
+              <div class="offer-header">
+                <div class="offer-header-content">
+                  <h4>Entrepreur Support</h4>
+                  <p class="xs-p">
+                    Provide teachers with practical strategies to support
+                    srudents with diverse needs and create inclusive classroom
+                    environments.
+                  </p>
+                </div>
+                <div class="offer-header-timestamp">
+                  <div class="details">
+                    <i class="fas fa-hourglass"></i>
+
+                    <p class="xs-p">10 mins</p>
+                  </div>
+                  <div class="details">
+                    <i class="fas fa-sliders-h"></i>
+
+                    <p class="xs-p">Sliding Scale</p>
+                  </div>
+                  <div class="edit-profile-container">
+                    <div class="multi-action">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#">
+                        <div class="action">
+                          <p class="md-p">Edit offering</p>
+                          <div class="image-container">
+                            <i class="fas fa-edit plus-icon"></i>
+                            <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-description">
+                <div class="content">
+                  <p class="xs-p">
+                    My services cater to educators and professionals who are
+                    committed to creating inclusive classrooms, supporting
+                    diverse learners, and enhancing their teaching practices to
+                    meet the needs of all students.
+                  </p>
+                </div>
+                <div class="content">
+                  <li class="xs-p">
+                    Visual strategies to Promote Communication
+                  </li>
+                  <li class="xs-p">
+                    Integrating a Child with Special Needs into The Classroom
+                  </li>
+                  <li class="xs-p">
+                    Autism Spectrum Disorders: Learning Styles and Interventions
+                  </li>
+                  <li class="xs-p">
+                    All Behavior Is Communication: Functional Analysis and
+                    Behavior Interventions
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action-container">
+          <h4>Values</h4>
+          <p class="sm-p mt-3">
+            Instructions for filling out this section and why it is valuable
+          </p>
+          <div class="multi-action">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#addValues">
+              <div class="action">
+                <p class="md-p">Edit Values</p>
+                <div class="image-container">
+                  <i class="fas fa-edit plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+          <p class="sm-p mt-3">
+            As a transgender coach and entrepreneur, my core values drive my
+            approach and interactions. Drawing from personal experiences, I am
+            committed to supporting and empowering individuals on their journeys
+            of self-discovery, self-acceptance, and personal growth. I also help
+            them achieve business goals, develop leadership skills, and foster
+            an innovative and growth-oriented mindset.
+          </p>
+
+          <div class="add-value-highlights-container mt-3">
+            <div class="highlight">
+              <div class="highlight-title">
+                <h4 class="title">Self-Acceptance</h4>
+              </div>
+              <div class="highlight-description">
+                <p class="description xs-p mt-3">
+                  Supporting individuals in embarcing their authentic selves,
+                  promoting personal growth, self-discovery, self-acceptance,
+                  and fostering a sense of empowerment in their gender identity
+                  journey.
+                </p>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-title">
+                <h4 class="title">Leadership and Management</h4>
+              </div>
+              <div class="highlight-description">
+                <p class="description xs-p mt-3">
+                  Supporting entrepreneurs in enhancing their leadership and
+                  management skills, including team building, decision making,
+                  conflict resolution, and fostering a positive work culture.
+                </p>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-title">
+                <h4 class="title">Communication</h4>
+              </div>
+              <div class="highlight-description">
+                <p class="description xs-p mt-3">
+                  Helping individuals develop effective Communication skills to
+                  navigate conversations about gender identity with family,
+                  friends, colleagues, and healthcare professionals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action-container">
+          <h4>Background</h4>
+          <p class="sm-p mt-3">
+            Instructions for filling out this section and why it is valuable
+          </p>
+          <div class="multi-action">
+            <a href="#">
+              <div class="action">
+                <p class="md-p">Edit Background</p>
+                <div class="image-container">
+                  <i class="fas fa-edit plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="edit-action-content-container mt-4">
+            <div class="edit-action-content">
+              <div class="content-label">
+                <div class="icon"><i class="fas fa-head-side-virus"></i></div>
+                <div class="label-content">
+                  <p class="md-p">Lorem Ipsum</p>
+                  <p class="xs-p">Personal Experience</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="sm-p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis voluptas nesciunt accusamus debitis, velit
+                  reprehenderit harum? Fugit sit cumque provident ab nulla quo,
+                  modi quos! Harum, sed. Delectus rerum accusantium adipisci
+                  harum, numquam dolor sequi iure suscipit ipsum quaerat soluta
+                  vel ut laudantium tenetur voluptatem accusamus nihil
+                  perferendis facere ex.
+                </p>
+              </div>
+            </div>
+            <div class="edit-action-content mt-4">
+              <div class="content-label">
+                <div class="icon"><i class="fas fa-briefcase"></i></div>
+                <div class="label-content">
+                  <p class="md-p">Entrepreur</p>
+                  <p class="xs-p">Work Experience - 12 years</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="sm-p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis voluptas nesciunt accusamus debitis, velit
+                  reprehenderit harum? Fugit sit cumque provident ab nulla quo,
+                  modi quos! Harum, sed. Delectus rerum accusantium adipisci
+                  harum, numquam dolor sequi iure suscipit ipsum quaerat soluta
+                  vel ut laudantium tenetur voluptatem accusamus nihil
+                  perferendis facere ex.
+                </p>
+              </div>
+            </div>
+            <div class="edit-action-content mt-4">
+              <div class="content-label">
+                <div class="icon"><i class="fas fa-certificate"></i></div>
+                <div class="label-content">
+                  <p class="md-p">Lorem Ipsum</p>
+                  <p class="xs-p">Certification</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="sm-p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis voluptas nesciunt accusamus debitis, velit
+                  reprehenderit harum? Fugit sit cumque provident ab nulla quo,
+                  modi quos! Harum, sed. Delectus rerum accusantium adipisci
+                  harum, numquam dolor sequi iure suscipit ipsum quaerat soluta
+                  vel ut laudantium tenetur voluptatem accusamus nihil
+                  perferendis facere ex.
+                </p>
+              </div>
+            </div>
+            <div class="edit-action-content mt-4">
+              <div class="content-label">
+                <div class="icon"><i class="fas fa-book"></i></div>
+                <div class="label-content">
+                  <p class="md-p">Lorem Ipsum</p>
+                  <p class="xs-p">Publication</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="sm-p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis voluptas nesciunt accusamus debitis, velit
+                  reprehenderit harum? Fugit sit cumque provident ab nulla quo,
+                  modi quos! Harum, sed. Delectus rerum accusantium adipisci
+                  harum, numquam dolor sequi iure suscipit ipsum quaerat soluta
+                  vel ut laudantium tenetur voluptatem accusamus nihil
+                  perferendis facere ex.
+                </p>
+              </div>
+            </div>
+            <div class="edit-action-content mt-4">
+              <div class="content-label">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <div class="label-content">
+                  <p class="md-p">Lorem Ipsum</p>
+                  <p class="xs-p">Media Appearance</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="sm-p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis voluptas nesciunt accusamus debitis, velit
+                  reprehenderit harum? Fugit sit cumque provident ab nulla quo,
+                  modi quos! Harum, sed. Delectus rerum accusantium adipisci
+                  harum, numquam dolor sequi iure suscipit ipsum quaerat soluta
+                  vel ut laudantium tenetur voluptatem accusamus nihil
+                  perferendis facere ex.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action-container">
+          <h4>Testimonials</h4>
+          <p class="sm-p mt-3">
+            Instructions for filling out this section and why it is valuable
+          </p>
+          <div class="multi-action">
+            <a href="#">
+              <div class="action">
+                <p class="md-p">Add a testimonial</p>
+                <div class="image-container">
+                  <i class="fas fa-plus plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="action">
+                <p class="md-p">Request a testimonial from a client</p>
+                <div class="image-container">
+                  <i class="fas fa-quote-left"></i>
+                  <!-- <img class="img-icon" src="./images/request.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="action-container">
+          <h4>Resources</h4>
+          <p class="sm-p mt-3">
+            Instructions for filling out this section and why it is valuable
+          </p>
+          <div class="multi-action">
+            <a href="#">
+              <div class="action">
+                <p class="md-p">Add a resource</p>
+                <div class="image-container">
+                  <i class="fas fa-plus plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="action-container">
+          <h4>Scope of Practice</h4>
+          <p class="sm-p mt-3">
+            Instructions for filling out this section and why it is valuable
+          </p>
+          <div class="multi-action">
+            <a href="#">
+              <div class="action">
+                <p class="md-p">Edit Scope of Practice</p>
+                <div class="image-container">
+                  <i class="fas fa-edit plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="edit-action-content-container mt-4">
+            <div class="edit-action-content">
+              <div class="content-label">
+                <div class="icon"><i class="fas fa-head-side-virus"></i></div>
+                <div class="label-content">
+                  <p class="md-p">Lorem Ipsum</p>
+                  <p class="xs-p">Personal Experience</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="sm-p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis voluptas nesciunt accusamus debitis, velit
+                  reprehenderit harum? Fugit sit cumque provident ab nulla quo,
+                  modi quos! Harum, sed. Delectus rerum accusantium adipisci
+                  harum, numquam dolor sequi iure suscipit ipsum quaerat soluta
+                  vel ut laudantium tenetur voluptatem accusamus nihil
+                  perferendis facere ex.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action-container">
+          <h4>Connect with me</h4>
+          <p class="sm-p mt-3">
+            Instructions for filling out this section and why it is valuable
+          </p>
+          <div class="multi-action">
+            <a href="#">
+              <div class="action">
+                <p class="md-p">Add links</p>
+                <div class="image-container">
+                  <i class="fas fa-plus plus-icon"></i>
+                  <!-- <img class="img-icon" src="./images/plus.png" alt="" /> -->
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <div class="footer-logo">
+        <h1><a href="#">Modality</a></h1>
+      </div>
+      <div class="footer-links-container">
+        <div class="footer-links">
+          <div class="links">
+            <h4><a href="#">Privacy Policy</a></h4>
+            <h4><a href="#">Terms of Use</a></h4>
+            <h4>
+              <a href="mailto:laura@findmodality.com"
+                >Contact: laura@findmodality.com</a
+              >
+            </h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Screen 2 Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="addDetails"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h4>Get your Modality profile started</h4>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe your practice in at least 10 words and we will use AI
+                to suggest a profile for you.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe your practice</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-dismiss="modal"
+            >
+              Fill in my profile manually
+            </button>
+            <button type="button" id="generateBtn" class="btn-modal black md-p">
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Screen 3 Modal -->
+    <div
+      class="modal fade"
+      id="secondModal"
+      tabindex="-1"
+      aria-labelledby="secondModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h4>Get your Modality profile started</h4>
+            </div>
+            <div class="help-me">
+              <button type="button" id="helpMe" class="btn-modal black md-p">
+                Help me generate my profile
+              </button>
+            </div>
+            <div class="notification profile-notification">
+              <div class="notification-container">
+                <div class="close-notification">
+                  <button
+                    type="button"
+                    class="btn-close-notification"
+                    aria-label="Close"
+                    id="closeNotificationBtn"
+                  >
+                    X
+                  </button>
+                </div>
+                <div class="notification-label">
+                  <p class="lg-p">Your profile has been generated!</p>
+                </div>
+                <div class="notification-description">
+                  <p class="sm-p">
+                    See our suggestion below and feel free to edit them to your
+                    liking. You can always re-generate a new profile using the
+                    button above.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                All fields are optional but we find that more complete profiles
+                help build trust with potential clients.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Your tagline</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  1-4 words that describe what you do (eg."Reiki Healing" or
+                  "Student Mentorship")
+                </p>
+              </div>
+              <div class="input-field">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Profile photo</p>
+              </div>
+
+              <div class="modal-upload">
+                <div class="update-picture">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input upload-file"
+                      id="profileImage"
+                    />
+                  </div>
+                </div>
+                <div class="add-photo">
+                  <button type="button" class="btn-modal md-p">
+                    Add a photo
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Pronouns</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">For example: she/her, they/them, ze/hir</p>
+              </div>
+              <div class="input-field">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Location</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">All sessions are remote by default.</p>
+              </div>
+              <div class="input-field">
+                <input type="text" />
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="inPersonCheckbox" />
+                <label for="inPersonCheckbox"
+                  >I'm also available for in-person sessions</label
+                >
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Tags</p>
+              </div>
+              <div class="input-field">
+                <input type="text" />
+              </div>
+              <div class="selected-tags">
+                <div class="remove-tag">
+                  <button>Gender Identity Exploration</button>
+                  <div class="close-tag">| X</div>
+                </div>
+                <div class="remove-tag">
+                  <button>Transition Support</button>
+                  <div class="close-tag">| X</div>
+                </div>
+                <div class="remove-tag">
+                  <button>Leadership and Management</button>
+                  <div class="close-tag">| X</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Description</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A brief description of your practice in 250 characters or
+                  less. This helps clients discover what kind of practitioner
+                  you are.
+                </p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer screen-three">
+            <button type="button" id="generateBtn" class="btn-modal black md-p">
+              Save and Add Services
+              <i class="fas fa-arrow-right" style="color: white"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-dismiss="modal"
+            >
+              Save and View Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Offerings Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="addOfferings"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h4>Add a Offerings</h4>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe the support you offer in at least 10 words and we will
+                use AI to suggest how to phrase the type of connections you
+                offer. Feel free to copy and paste or type in any unstructured
+                text, we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe the support you offer</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-dismiss="modal"
+            >
+              Add my offerings manually
+            </button>
+            <button
+              type="button"
+              id="generateOfferingsBtn"
+              class="btn-modal black md-p"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Offerings Modal Step-2 -->
+    <div
+      class="modal fade"
+      id="addOfferingsStepTwo"
+      tabindex="-1"
+      aria-labelledby="secondModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h4>Add a Offering</h4>
+            </div>
+            <div class="help-me">
+              <button
+                type="button"
+                id="offeringsBack"
+                class="btn-modal black md-p"
+              >
+                Generate a new offer
+              </button>
+            </div>
+            <div class="actions-container">
+              <button
+                type="button"
+                id="delete"
+                class="btn-modal md-p"
+                style="color: #c41827"
+              >
+                Delete this connection
+                <i
+                  class="fas fa-check-circle"
+                  style="color: #c41827; border-radius: 50%"
+                ></i>
+              </button>
+
+              <button type="button" id="hide-offer" class="btn-modal md-p">
+                Hide this offer from my profile
+              </button>
+            </div>
+            <div class="notification offer-notification">
+              <div class="notification-container">
+                <div class="close-notification">
+                  <button
+                    type="button"
+                    class="btn-close-offer-notification"
+                    aria-label="Close"
+                    id="closeNotificationBtn"
+                  >
+                    X
+                  </button>
+                </div>
+                <div class="notification-label">
+                  <p class="lg-p">Your offering has been generated!</p>
+                </div>
+                <div class="notification-description">
+                  <p class="sm-p">
+                    See our suggestion below and feel free to edit them to your
+                    liking. You can always re-generate a new offer using the
+                    button above.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Fields marked with an <span class="required">*</span> are
+                required.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Service Name <span class="required">*</span></p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A brief title to describe what you're offering (eg.
+                  "Introductory Session" or "Student Support Session")
+                </p>
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Trans Support" />
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Duration <span class="required">*</span></p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">In minutes</p>
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="50 minutes" />
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Price <span class="required">*</span></p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">In US Dollars</p>
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="$50" />
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Description</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A brief description of your practice in 250 characters or
+                  less. If you need more space to describe this service, use the
+                  section "More information".
+                </p>
+              </div>
+              <div class="comment">
+                <textarea
+                  name="comment"
+                  id=""
+                  cols="15"
+                  rows="5"
+                  placeholder="Transition support is a specialized service designed to provide guidance and assistance to transgender individuals as they navigate their gender transition journey."
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">More information</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A long description of your service, including details, upto
+                  1000 characters.
+                </p>
+              </div>
+              <div class="comment">
+                <textarea
+                  name="comment"
+                  id="more-info"
+                  cols="15"
+                  rows="10"
+                  placeholder="This service focuses on offering emotional, psychological, and practical support to help individuals shape their mindset and life for success during and after their transition. Transition support is a comprehensive service that aims to empower transgender individuals to lead fulfilling lives by providing the guidance and resources they need to navigate the challenges and opportunities that come with their gender transition journey. It focuses on personal grown, empowerment, and resilience to help individuals shape a successful and authentic life."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer screen-three">
+            <button type="button" id="save" class="btn-modal black md-p">
+              Save and continue
+              <i class="fas fa-arrow-right" style="color: white"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-dismiss="modal"
+            >
+              Save and view Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add values modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="addValues"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h4>Add your Values</h4>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Values are very important to us at Modality
+                <a href="#" style="text-decoration: underline"
+                  >(you can read about ours here).</a
+                >
+                Expressing them in your profile helps clients to determine if
+                you would be a good fit for them.
+              </p>
+              <br />
+              <p class="sm-p">
+                Describe your values in at least 10 words and we will use AI to
+                suggest values for you. Feel free to copy and paste or type in
+                any unstructured text, we'll help eidt it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe your values</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-dismiss="modal"
+            >
+              Add my values manually
+            </button>
+            <button
+              type="button"
+              id="generateValuesBtn"
+              class="btn-modal black md-p"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add values step two -->
+    <div
+      class="modal fade"
+      id="addValuesStepTwo"
+      tabindex="-1"
+      aria-labelledby="secondModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h4>Add Your Values</h4>
+            </div>
+            <div class="help-me">
+              <button
+                type="button"
+                id="valuesBack"
+                class="btn-modal black md-p"
+              >
+                Help me generate my values
+              </button>
+            </div>
+            <div class="notification value-notification">
+              <div class="notification-container">
+                <div class="close-notification">
+                  <button
+                    type="button"
+                    class="btn-close-value-notification"
+                    aria-label="Close"
+                    id="closeNotificationBtn"
+                  >
+                    X
+                  </button>
+                </div>
+                <div class="notification-label">
+                  <p class="lg-p">Your values have been generated!</p>
+                </div>
+                <div class="notification-description">
+                  <p class="sm-p">
+                    See our suggestion below and feel free to edit them to your
+                    liking. You can always re-generate a new offer using the
+                    button above.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Values are very important to us at Modality
+                <a href="#" style="text-decoration: underline"
+                  >(you can read about ours here).</a
+                >
+                Expressing them in your profile helps clients to determine if
+                you would be a good fit for them.
+              </p>
+              <br />
+              <p class="sm-p">you can add up to 3 values on your profile.</p>
+              <br />
+              <p class="sm-p">
+                Fields marked with an <span class="required">*</span> are
+                required.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Description</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A brief description of you embody your values in your practice
+                  (400 characters or less).
+                </p>
+              </div>
+              <div class="comment">
+                <textarea
+                  name="comment"
+                  id=""
+                  cols="15"
+                  rows="5"
+                  placeholder="As a transgender coach and entrepreneur, my core values drive my approach and interactions. Drawing from personal experiences, I am committed to supporting and empowering individuals on their journeys of self-discovery, self-acceptance, and personal growth. I also help them achieve businessgoals, develop leadership skills, and foster an innovative and growth-oriented mindset."
+                ></textarea>
+              </div>
+            </div>
+            <div class="multi-options">
+              <div class="option-title"><h4>Value 1</h4></div>
+              <select id="myOption">
+                <option value="" disabled selected hidden>Option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Value title <span class="required">*</span></p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  1-2 words that describe the value you live by, for example
+                  "Self-acceptance" or "Intersectionality".
+                </p>
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Self-acceptance" />
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Description</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A brief description of your practice in 250 characters or
+                  less.
+                </p>
+              </div>
+              <div class="comment">
+                <textarea
+                  name="comment"
+                  id=""
+                  cols="15"
+                  rows="5"
+                  placeholder="The process by which a person or community controls their own life."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="multi-options">
+              <div class="option-title"><h4>Value 2</h4></div>
+              <select id="myOption">
+                <option value="" disabled selected hidden>Option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Value title <span class="required">*</span></p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  1-2 words that describe the value you live by, for example
+                  "Self-acceptance" or "Intersectionality".
+                </p>
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Leaadership and Management" />
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Description</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A brief description of your practice in 250 characters or
+                  less.
+                </p>
+              </div>
+              <div class="comment">
+                <textarea
+                  name="comment"
+                  id=""
+                  cols="15"
+                  rows="5"
+                  placeholder="Supporting entrepreneurs in enhancing their leadership and management skills, including team building, decision making, conflict resolution, and fostering a positive work culture."
+                ></textarea>
+              </div>
+            </div>
+            <div class="actions-container add-custom-field">
+              <button type="button" id="custom-field" class="btn-modal md-p">
+                Add another value
+                <i class="fas fa-plus plus-icon"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-footer screen-three">
+            <button type="button" id="save" class="btn-modal black md-p">
+              Save and continue
+              <i class="fas fa-arrow-right" style="color: white"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-dismiss="modal"
+            >
+              Save and view Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Screen Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="starterModal"
+      tabindex="-1"
+      aria-labelledby="starterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Start building your profile</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe your practice in at least 10 words and we will use AI
+                to suggest a profile for you.
+                <br />
+                Feel free to copy and paste or type in any unstructured text,
+                we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe your practice in at least 10 words</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-modal-simple md-p"
+              data-bs-dismiss="modal"
+            >
+              Manually create my profile
+            </button>
+            <button type="button" id="generateBtn" class="btn-modal black md-p">
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

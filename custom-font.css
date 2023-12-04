@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "kollektif Regular";
+  src: url(./font-outfit/kollektif/Kollektif.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "kollektif Bold";
+  src: url(./font-outfit/kollektif/Kollektif-Bold.ttf) format("truetype");
+}
