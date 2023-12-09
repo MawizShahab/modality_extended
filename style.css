@@ -338,6 +338,16 @@ button.btn-modal.black {
   background: var(--common-black);
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+button.generate-outline {
+  color: var(--common-black);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -527,6 +537,11 @@ button#closeNotificationBtn {
   gap: 20px;
 }
 
+.actions-container.custom {
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .actions-container button {
   padding: 5px 12px !important;
 }
@@ -562,6 +577,12 @@ button#closeNotificationBtn {
   background-image: url("./images/down.svg");
   background-repeat: no-repeat;
   background-position: right 10px center; /* Adjust position to accommodate padding */
+}
+
+.custom-label-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -833,6 +854,14 @@ button#closeNotificationBtn {
   }
   .edit-action-content {
     gap: 10px;
+  }
+
+  .add-edit-offering-footer {
+    flex-direction: column-reverse !important;
+  }
+
+  .normal-direction {
+    flex-direction: column !important;
   }
 }
 
