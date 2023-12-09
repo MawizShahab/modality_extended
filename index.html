@@ -207,7 +207,7 @@
         </div>
         <div class="edit-profile-container">
           <div class="multi-action">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#addDetails">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#editIntroModal">
               <div class="action">
                 <p class="md-p">Edit Intro Section</p>
                 <div class="image-container">
@@ -271,7 +271,11 @@
                   </div>
                   <div class="edit-profile-container">
                     <div class="multi-action">
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#addOfferingsStepTwo"
+                      >
                         <div class="action">
                           <p class="md-p">Edit offering</p>
                           <div class="image-container">
@@ -335,7 +339,11 @@
                   </div>
                   <div class="edit-profile-container">
                     <div class="multi-action">
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#addOfferingsStepTwo"
+                      >
                         <div class="action">
                           <p class="md-p">Edit offering</p>
                           <div class="image-container">
@@ -399,7 +407,11 @@
                   </div>
                   <div class="edit-profile-container">
                     <div class="multi-action">
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#addOfferingsStepTwo"
+                      >
                         <div class="action">
                           <p class="md-p">Edit offering</p>
                           <div class="image-container">
@@ -803,6 +815,200 @@
         </div>
       </div>
     </div>
+    <!-- Edit Intro Section Modal Start -->
+
+    <div
+      class="modal fade"
+      id="editIntroModal"
+      tabindex="-1"
+      aria-labelledby="editIntroModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h4>Edit intro section</h4>
+            </div>
+            <div class="help-me">
+              <button
+                type="button"
+                id="helpMe"
+                class="btn-modal black md-p text-center"
+                style="width: 100%"
+                data-bs-toggle="modal"
+                data-bs-target="#generateNewIntroModal"
+              >
+                Generate a new intro section
+              </button>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                All fields are optional but we find that more complete profiles
+                help build trust with potential clients.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label custom-label-button">
+                <p class="md-p">Your tagline</p>
+                <button
+                  class="btn-modal md-p generate-outline"
+                  data-bs-toggle="modal"
+                  data-bs-target="#generateNewTagLineModal"
+                >
+                  Generate
+                  <i class="fas fa-bolt" style="color: black"></i>
+                </button>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  1-4 words that describe what you do (eg."Reiki Healing" or
+                  "Student Mentorship")
+                </p>
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Trans Support" />
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Profile photo</p>
+              </div>
+
+              <div class="modal-upload">
+                <div class="update-picture">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input upload-file"
+                      id="profileImage"
+                    />
+                  </div>
+                </div>
+                <div class="add-photo">
+                  <button type="button" class="btn-modal md-p">
+                    Add a photo
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Pronouns</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">For example: she/her, they/them, ze/hir</p>
+              </div>
+              <div class="input-field">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Location</p>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">All sessions are remote by default.</p>
+              </div>
+              <div class="input-field">
+                <input type="text" />
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="inPersonCheckbox" />
+                <label for="inPersonCheckbox"
+                  >I'm also available for in-person sessions</label
+                >
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label custom-label-button">
+                <p class="md-p">Tags</p>
+                <button
+                  class="btn-modal md-p generate-outline"
+                  data-bs-toggle="modal"
+                  data-bs-target="#generateNewTagModal"
+                >
+                  Generate
+                  <i class="fas fa-bolt" style="color: black"></i>
+                </button>
+              </div>
+
+              <div class="input-field mt-3">
+                <input type="text" />
+              </div>
+              <div class="selected-tags">
+                <div class="remove-tag">
+                  <button>Gender Identity Exploration</button>
+                  <div class="close-tag">| X</div>
+                </div>
+                <div class="remove-tag">
+                  <button>Transition Support</button>
+                  <div class="close-tag">| X</div>
+                </div>
+                <div class="remove-tag">
+                  <button>Leadership and Management</button>
+                  <div class="close-tag">| X</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-field">
+              <div class="field-label custom-label-button">
+                <p class="md-p">Description</p>
+                <button
+                  class="btn-modal md-p generate-outline"
+                  data-bs-toggle="modal"
+                  data-bs-target="#generateNewDescriptionModal"
+                >
+                  Generate
+                  <i class="fas fa-bolt" style="color: black"></i>
+                </button>
+              </div>
+              <div class="field-content">
+                <p class="xs-p">
+                  A brief description of your practice in 250 characters or
+                  less. This helps clients discover what kind of practitioner
+                  you are.
+                </p>
+              </div>
+              <div class="comment">
+                <textarea
+                  name="comment"
+                  id=""
+                  cols="15"
+                  rows="5"
+                  placeholder="I'm jadis, a wellness worker specializing in gneder transitions. Let me be your trusted companion, providing practical resources and emotional support on your path to self-discovery and authentic living."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer screen-three">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-dismiss="modal"
+            >
+              Save and View Profile
+            </button>
+            <button type="button" id="generateBtn" class="btn-modal black md-p">
+              Save and continue to offerings section
+              <i class="fas fa-arrow-right" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Intro Section Modal End -->
+
     <!-- Screen 3 Modal -->
     <div
       class="modal fade"
@@ -1039,12 +1245,12 @@
         </div>
       </div>
     </div>
-    <!-- Add Offerings Modal Step-2 -->
+    <!-- Add/Edit Offerings Modal Step-2 -->
     <div
       class="modal fade"
       id="addOfferingsStepTwo"
       tabindex="-1"
-      aria-labelledby="secondModalLabel"
+      aria-labelledby="addOfferingsStepTwoModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog custom-modal modal-dialog-centered">
@@ -1060,33 +1266,18 @@
           <div class="modal-body">
             <!-- Your modal content goes here -->
             <div class="modal-title">
-              <h4>Add a Offering</h4>
+              <h4>Add/Edit an Offering</h4>
             </div>
             <div class="help-me">
               <button
                 type="button"
-                id="offeringsBack"
                 class="btn-modal black md-p"
+                style="width: 100%"
+                data-bs-toggle="modal"
+                data-bs-target="#regenerateOfferingModal"
               >
-                Generate a new offer
-              </button>
-            </div>
-            <div class="actions-container">
-              <button
-                type="button"
-                id="delete"
-                class="btn-modal md-p"
-                style="color: #c41827"
-              >
-                Delete this connection
-                <i
-                  class="fas fa-check-circle"
-                  style="color: #c41827; border-radius: 50%"
-                ></i>
-              </button>
-
-              <button type="button" id="hide-offer" class="btn-modal md-p">
-                Hide this offer from my profile
+                Re-generate this offering
+                <i class="fas fa-bolt" style="color: white"></i>
               </button>
             </div>
             <div class="notification offer-notification">
@@ -1102,7 +1293,9 @@
                   </button>
                 </div>
                 <div class="notification-label">
-                  <p class="lg-p">Your offering has been generated!</p>
+                  <p class="lg-p">
+                    A draft of our offering has been generated!
+                  </p>
                 </div>
                 <div class="notification-description">
                   <p class="sm-p">
@@ -1113,15 +1306,55 @@
                 </div>
               </div>
             </div>
+            <div class="actions-container custom mt-3">
+              <button
+                type="button"
+                id="delete"
+                class="btn-modal md-p"
+                style="color: #c41827"
+              >
+                Delete this offering
+                <i
+                  class="fas fa-trash-alt"
+                  style="color: #c41827; border-radius: 50%; margin-left: 10px"
+                ></i>
+              </button>
+
+              <button type="button" id="hide-offer" class="btn-modal md-p">
+                Hide this offering from my profile
+              </button>
+            </div>
+
             <div class="modal-description">
-              <p class="sm-p">
+              <a href="#" class="sm-p" style="text-decoration: underline">
+                Restore a previously generated version of this offering
+                <i
+                  class="fas fa-chevron-down"
+                  style="margin-top: 5px; margin-left: 5px"
+                ></i>
+              </a>
+            </div>
+
+            <div class="modal-description">
+              <p class="sm-p">Description needed here:</p>
+              <li class="sm-p">here's how you do it</li>
+              <li class="sm-p">here's why it's valuable</li>
+              <p class="sm-p mt-3">
                 Fields marked with an <span class="required">*</span> are
                 required.
               </p>
             </div>
             <div class="modal-field">
-              <div class="field-label">
-                <p class="md-p">Service Name <span class="required">*</span></p>
+              <div class="field-label custom-label-button">
+                <p class="md-p">Title <span class="required">*</span></p>
+                <button
+                  class="btn-modal md-p generate-outline"
+                  data-bs-toggle="modal"
+                  data-bs-target="#generateTitleModal"
+                >
+                  Generate
+                  <i class="fas fa-bolt" style="color: black"></i>
+                </button>
               </div>
               <div class="field-content">
                 <p class="xs-p">
@@ -1157,8 +1390,16 @@
             </div>
 
             <div class="modal-field">
-              <div class="field-label">
+              <div class="field-label custom-label-button mb-3">
                 <p class="md-p">Description</p>
+                <button
+                  class="btn-modal md-p generate-outline"
+                  data-bs-toggle="modal"
+                  data-bs-target="#generateOfferingDescriptionModal"
+                >
+                  Generate
+                  <i class="fas fa-bolt" style="color: black"></i>
+                </button>
               </div>
               <div class="field-content">
                 <p class="xs-p">
@@ -1178,8 +1419,16 @@
               </div>
             </div>
             <div class="modal-field">
-              <div class="field-label">
+              <div class="field-label custom-label-button">
                 <p class="md-p">More information</p>
+                <button
+                  class="btn-modal md-p generate-outline"
+                  data-bs-toggle="modal"
+                  data-bs-target="#generateOfferingMoreInfoModal"
+                >
+                  Generate
+                  <i class="fas fa-bolt" style="color: black"></i>
+                </button>
               </div>
               <div class="field-content">
                 <p class="xs-p">
@@ -1198,9 +1447,14 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer screen-three">
-            <button type="button" id="save" class="btn-modal black md-p">
-              Save and continue
+          <div class="modal-footer screen-three add-edit-offering-footer">
+            <button
+              type="button"
+              id="save"
+              class="btn-modal black md-p"
+              data-bs-dismiss="modal"
+            >
+              Save and continue to next offering
               <i class="fas fa-arrow-right" style="color: white"></i>
             </button>
             <button
@@ -1287,7 +1541,7 @@
       class="modal fade"
       id="addValuesStepTwo"
       tabindex="-1"
-      aria-labelledby="secondModalLabel"
+      aria-labelledby="addValuesStepTwoModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog custom-modal modal-dialog-centered">
@@ -1586,5 +1840,877 @@
         </div>
       </div>
     </div>
+    <!-- Start Screen Modal End -->
+    <!-- Generate New Intro Section Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="generateNewIntroModal"
+      tabindex="-1"
+      aria-labelledby="generateNewIntroModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Generate a new intro section</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe yourself and practice in at least 10 words and we will
+                use AI to suggest to fill out intro section. Feel free to copy
+                and paste or type in any unstructured text, we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe your practice in at least 10 words</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+              id="backToEditIntro"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Generate New Intro Section Modal End -->
+    <!-- Generate New Tag Line Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="generateNewTagLineModal"
+      tabindex="-1"
+      aria-labelledby="generateNewTagLineModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Generate a new tagline</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe yourself and practice in at least 10 words and we will
+                use AI to suggest a tagline for your profile. Feel free to copy
+                and paste or type in any unstructured text, we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe your practice in at least 10 words</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Generate New Tag Line Modal End -->
+    <!-- Generate New Tag Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="generateNewTagModal"
+      tabindex="-1"
+      aria-labelledby="generateNewTagModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Generate new tags</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe yourself and practice in at least 10 words and we will
+                use AI to suggest a tags for your profile. Feel free to copy and
+                paste or type in any unstructured text, we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe your practice in at least 10 words</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Generate New Tag Modal End -->
+    <!-- Generate New Description Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="generateNewDescriptionModal"
+      tabindex="-1"
+      aria-labelledby="generateNewDescriptionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Generate a new description</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe yourself and practice in at least 10 words and we will
+                use AI to suggest a description for your profile. Feel free to
+                copy and paste or type in any unstructured text, we'll help edit
+                it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe your practice in at least 10 words</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#editIntroModal"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Generate New Description Modal End -->
+    <!-- Re-generate An Offering Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="regenerateOfferingModal"
+      tabindex="-1"
+      aria-labelledby="regenerateOfferingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Re-generate an offering</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe the support you offer in at least 10 words and we will
+                use AI to suggest how to phrase your offerings. Feel free to
+                copy and paste or type in any unstructured text, we'll help edit
+                it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe the support you offer</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Re-generate An Offering Modal End -->
+    <!-- Generate a Title Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="generateTitleModal"
+      tabindex="-1"
+      aria-labelledby="generateTitleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Generate a title</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe the support you offer in at least 10 words and we will
+                use AI to suggest how to suggest a title for this offerings.
+                Feel free to copy and paste or type in any unstructured text,
+                we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe the support you offer</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Generate a Title Modal End -->
+    <!-- Generate Offering Description Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="generateOfferingDescriptionModal"
+      tabindex="-1"
+      aria-labelledby="generateOfferingDescriptionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Generate a description for this offering</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe the support you offer in at least 10 words and we will
+                use AI to suggest how to suggest a description for this
+                offering. Feel free to copy and paste or type in any
+                unstructured text, we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe the support you offer</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Generate Offering Description Modal End -->
+
+    <!-- Generate Offering More Information Modal -->
+    <div
+      class="modal fade custom-modal-container"
+      id="generateOfferingMoreInfoModal"
+      tabindex="-1"
+      aria-labelledby="generateOfferingMoreInfoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-80 modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your modal content goes here -->
+            <div class="modal-title">
+              <h2>Generate more information about this offering</h2>
+            </div>
+            <div class="modal-description">
+              <p class="sm-p">
+                Describe the support you offer in at least 10 words and we will
+                use AI to suggest how to suggest a more detailed description for this
+                offering. Feel free to copy and paste or type in any
+                unstructured text, we'll help edit it.
+              </p>
+            </div>
+            <div class="modal-field">
+              <div class="field-label">
+                <p class="md-p">Describe the support you offer</p>
+              </div>
+              <div class="comment">
+                <textarea name="comment" id="" cols="15" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="starter-tags-container">
+              <div class="field-label">
+                <p class="md-p">Use AI to make my profile sound more:</p>
+                <p class="mini-text">Select up to 3</p>
+              </div>
+
+              <div class="minimumtags">
+                <ul class="tags-list" id="tagsList">
+                  <!-- Add default tags here -->
+                  <li class="tag tag-light">Friendly</li>
+                  <li class="tag tag-light">Professional</li>
+                  <li class="tag tag-medium">Intellectual</li>
+                  <li class="tag tag-dark">Casual</li>
+                  <li class="tag tag-light">Funny</li>
+                </ul>
+
+                <p id="moreOptionsLink">
+                  More options <i class="fas fa-chevron-down"></i>
+                </p>
+              </div>
+
+              <ul class="tags-list" id="moreTagsList" style="display: none">
+                <!-- Add additional tags here -->
+                <li class="tag tag-medium">Optimistic</li>
+                <li class="tag tag-dark">Inspirational</li>
+                <li class="tag tag-light">Clinical</li>
+                <li class="tag tag-light">Peaceful</li>
+                <li class="tag tag-medium">Wise</li>
+                <li class="tag tag-dark">Witty</li>
+                <li class="tag tag-light">Matter of fact</li>
+                <li class="tag tag-light">Compassionate</li>
+                <li class="tag tag-medium">Reassuring</li>
+                <li class="tag tag-medium">Personal</li>
+                <li class="tag tag-medium">Caring</li>
+                <li class="tag tag-light">Transparent</li>
+                <li class="tag tag-light">Mindful</li>
+                <li class="tag tag-medium">Empathetic</li>
+                <li class="tag tag-dark">Supportive</li>
+                <li class="tag tag-light">Whimsical</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer normal-direction">
+            <button
+              type="button"
+              class="btn-modal md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              <i
+                class="fas fa-arrow-left"
+                style="color: black; margin-right: 20px"
+              ></i>
+              Manually edit this section
+            </button>
+            <button
+              type="button"
+              id="generateBtn"
+              class="btn-modal black md-p"
+              data-bs-toggle="modal"
+              data-bs-target="#addOfferingsStepTwo"
+            >
+              Generate
+              <i class="fas fa-bolt" style="color: white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Generate Offering More Information Modal End -->
   </body>
 </html>
