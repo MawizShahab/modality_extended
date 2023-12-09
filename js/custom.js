@@ -17,6 +17,20 @@ $(document).ready(function () {
     });
   });
 
+  // Js for the Edit intro sections
+
+  // $("#editIntroModal").on("show.bs.modal", function (e) {
+  //   $("#backToEditInro").on("click", function () {
+  //     $("#editIntroModal").modal("hide");
+  //     $("#generateNewIntroModal").modal("show");
+  //   });
+
+  //   $("#offeringsBack").on("click", function () {
+  //     $("#addOfferings").modal("show");
+  //     $("#addOfferingsStepTwo").modal("hide");
+  //   });
+  // });
+
   // Js for the Add offerings popup
   $("#addOfferings").on("show.bs.modal", function (e) {
     $("#generateOfferingsBtn").on("click", function () {
@@ -60,12 +74,18 @@ $(document).ready(function () {
   });
 });
 
+// Js to handle starter modal and more selections toggle for AI
+
 $(document).ready(function () {
   $("#starterModal").modal("show");
-  $("#moreOptionsLink").click(function () {
-    $("#moreTagsList").slideToggle();
-    var linkText = $("#moreOptionsLink").text();
-    $("#moreOptionsLink").html(
+  $(
+    "#starterModal #moreOptionsLink, #generateNewIntroModal #moreOptionsLink, #generateNewTagLineModal #moreOptionsLink, #generateNewTagModal #moreOptionsLink, #generateNewDescriptionModal #moreOptionsLink, #regenerateOfferingModal #moreOptionsLink, #generateTitleModal #moreOptionsLink, #generateOfferingDescriptionModal #moreOptionsLink, #generateOfferingMoreInfoModal #moreOptionsLink"
+  ).click(function () {
+    var moreTagsList = $(this).closest(".modal-body").find("#moreTagsList");
+    moreTagsList.slideToggle();
+
+    var linkText = $(this).text();
+    $(this).html(
       linkText.includes("More")
         ? "Less options <i class='fas fa-chevron-up'></i>"
         : "More options <i class='fas fa-chevron-down'></i>"
@@ -73,7 +93,6 @@ $(document).ready(function () {
   });
 
   if ($(window).width() <= 768) {
-    // Adjust the width threshold as needed
     $(".additional-profile-tag-wrapper").insertAfter(
       ".upload-profile-container"
     );
