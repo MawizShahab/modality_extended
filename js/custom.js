@@ -77,9 +77,9 @@ $(document).ready(function () {
 // Js to handle starter modal and more selections toggle for AI
 
 $(document).ready(function () {
-  $("#starterModal").modal("show");
+  // $("#starterModal").modal("show");
   $(
-    "#starterModal #moreOptionsLink, #generateNewIntroModal #moreOptionsLink, #generateNewTagLineModal #moreOptionsLink, #generateNewTagModal #moreOptionsLink, #generateNewDescriptionModal #moreOptionsLink, #regenerateOfferingModal #moreOptionsLink, #generateTitleModal #moreOptionsLink, #generateOfferingDescriptionModal #moreOptionsLink, #generateOfferingMoreInfoModal #moreOptionsLink"
+    "#starterModal #moreOptionsLink, #generateNewIntroModal #moreOptionsLink, #generateNewTagLineModal #moreOptionsLink, #generateNewTagModal #moreOptionsLink, #generateNewDescriptionModal #moreOptionsLink, #regenerateOfferingModal #moreOptionsLink, #generateTitleModal #moreOptionsLink, #generateOfferingDescriptionModal #moreOptionsLink, #generateOfferingMoreInfoModal #moreOptionsLink, #generateNewValuesModal #moreOptionsLink, #generateValuesDescriptionModal #moreOptionsLink, #generateValuesTitleModal #moreOptionsLink, #generateNewBackgroundModal #moreOptionsLink, #generateBackgroundTitleModal #moreOptionsLink, #generateBackgroundDescriptionModal #moreOptionsLink, #generateAddEditScopeTitleModal #moreOptionsLink, #generateAddEditScopeDescriptionModal #moreOptionsLink, #generateNewResourceDescriptionModal #moreOptionsLink, #generateResourceTitleModal #moreOptionsLink, #generateResourceDescriptionModal #moreOptionsLink"
   ).click(function () {
     var moreTagsList = $(this).closest(".modal-body").find("#moreTagsList");
     moreTagsList.slideToggle();
