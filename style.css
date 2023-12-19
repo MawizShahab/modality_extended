@@ -585,6 +585,25 @@ button#closeNotificationBtn {
   align-items: center;
 }
 
+.multi-options.customized {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.multi-options.customized select {
+  width: 100%;
+}
+
+.modal-footer.full-width {
+  flex-direction: column;
+}
+
+.modal-footer.full-width button {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 64px;
@@ -863,6 +882,10 @@ button#closeNotificationBtn {
   .normal-direction {
     flex-direction: column !important;
   }
+
+  .modal-footer.full-width {
+    flex-direction: column !important;
+  }
 }
 
 .tags-list {
@@ -1035,4 +1058,8 @@ a.link-outfit p {
 
 .edit-action-content .content {
   width: 65%;
+}
+
+.to-end{
+  justify-content: flex-end;
 }
