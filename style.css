@@ -1491,10 +1491,40 @@ section.homepage-faq-main-wrapper {
     width: 100%;
     text-align: center;
   }
-  
+
   .homepage-faq-hero img {
     width: 100%;
   }
 }
 
 /* Homepage Screen Design Mobile End */
+
+/* Registration Screens */
+
+.registration-modal .modal-content {
+  background: var(--body-background);
+}
+
+.registration-modal {
+  max-width: 50%;
+}
+
+.registration-modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+.registration-container.sign-up {
+  background-image: url(./images/signup-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .registration-modal {
+    max-width: 100%;
+  }
+}
+
+/* Registration Screens End */
