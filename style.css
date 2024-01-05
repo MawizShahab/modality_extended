@@ -620,6 +620,12 @@ button#closeNotificationBtn {
     font-size: 24px;
   }
 
+  .xl-p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+  }
+
   .lg-p {
     font-size: 20px;
   }
@@ -666,6 +672,10 @@ button#closeNotificationBtn {
 
   h4 {
     font-size: 20px;
+  }
+
+  .xl-p {
+    font-size: 18px;
   }
 
   .lg-p {
@@ -1125,6 +1135,7 @@ a.link-outfit p {
 .faq-title p {
   font-size: 250px;
   margin-left: -20px;
+  color: #000;
 }
 
 .label-container .extended-label {
@@ -1221,3 +1232,266 @@ span.toggle-icon {
 }
 
 /* FAQ Screen Mobile Design End */
+
+/* Homepage Screen Design */
+
+.homepage-hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 25px 0;
+  gap: 100px;
+}
+
+.homepage-hero-content {
+  /* width: 60%; */
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  padding-top: 30%;
+}
+
+.hero-label p {
+  font-size: 70px;
+  line-height: 75px;
+  color: #000;
+}
+
+.homepage-hero-content .links-container {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.hero-link {
+  padding: 10px 35px;
+  border: 3px solid #000;
+  border-radius: 50px;
+}
+
+.hero-link a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero-link.black {
+  background: #000;
+}
+
+.hero-link.green {
+  background: #bfe494;
+}
+
+.hero-link.black a {
+  color: #bfe494;
+}
+
+.hero-link.green a {
+  color: #000;
+}
+
+.homepage-hero-image {
+  padding: 20px 80px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background: #f2eeff;
+  align-self: flex-start;
+}
+
+section.sponsors-section-wrapper {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  background: #e4f5d0;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+section.homepage-faq-main-wrapper {
+  padding: 35px 0;
+}
+
+.homepage-faq-main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.homepage-faq-hero.individual {
+  padding: 20px 80px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background: #ffefee;
+}
+
+.homepage-hero-image-custom-wrapper {
+  align-self: flex-start;
+  border-radius: 50px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.homepage-hero-image-custom-wrapper-two {
+  align-self: flex-start;
+  border-radius: 50px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+.homepage-hero-image-custom {
+  border-top: 15px solid #f2eeff;
+  border-right: 15px solid #f2eeff;
+  border-radius: 50px;
+}
+
+.homepage-hero-image-custom-two {
+  border-top: 15px solid #f2eeff;
+  border-left: 15px solid #f2eeff;
+  border-radius: 50px;
+}
+
+.benefits-content {
+  padding: 30px 0;
+}
+
+.benefits-content .hero-label {
+  display: flex;
+  align-items: flex-end;
+  gap: 100px;
+}
+
+.benefits-content .hero-label span {
+  align-self: flex-end;
+}
+
+.benefits-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 75px 0;
+}
+
+.benefits-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-logo p {
+  text-align: center;
+}
+
+.benefits-content .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-hero-section.two {
+  flex-direction: row-reverse;
+}
+
+.homepage-hero-image img,
+.homepage-faq-hero img,
+.homepage-hero-image-custom img,
+.homepage-hero-image-custom-two img {
+  width: 100%;
+}
+
+/* Homepage Screen Design End */
+
+/* Homepage Screen Design Mobile */
+
+@media screen and (max-width: 768px) {
+  .homepage-hero-section {
+    flex-direction: column;
+    padding: 0;
+    gap: 50px;
+  }
+  .homepage-hero-content {
+    padding-top: 0;
+  }
+  .hero-label p {
+    font-size: 32px;
+    line-height: 35px;
+    color: #000;
+    font-weight: bold;
+  }
+  .hero-link a {
+    font-size: 12px;
+  }
+  .sponsors {
+    flex-direction: column;
+    gap: 50px;
+    padding: 25px 0;
+  }
+
+  .homepage-faq-main-container {
+    flex-direction: column !important;
+    gap: 50px;
+  }
+
+  .homepage-hero-image-custom {
+    border-top: 15px solid #f2eeff;
+    border-right: 15px solid #f2eeff;
+    border-radius: 30px;
+  }
+
+  .homepage-hero-image-custom-wrapper {
+    align-self: flex-start;
+    border-radius: 30px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+
+  .benefits-content .hero-label {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .benefits-logo-container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 0;
+  }
+
+  .homepage-hero-section.two {
+    flex-direction: row-reverse;
+    flex-direction: column;
+  }
+
+  .homepage-hero-image-custom-wrapper-two {
+    align-self: flex-start;
+    border-radius: 30px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+  }
+  .homepage-hero-image-custom-two {
+    border-top: 15px solid #f2eeff;
+    border-left: 15px solid #f2eeff;
+    border-radius: 30px;
+  }
+  .homepage-hero-content .links-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .homepage-hero-content .links-container .hero-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Homepage Screen Design Mobile End */
