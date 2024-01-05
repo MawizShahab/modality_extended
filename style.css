@@ -1400,7 +1400,6 @@ section.homepage-faq-main-wrapper {
 }
 
 .homepage-hero-image img,
-.homepage-faq-hero img,
 .homepage-hero-image-custom img,
 .homepage-hero-image-custom-two img {
   width: 100%;
@@ -1491,6 +1490,10 @@ section.homepage-faq-main-wrapper {
   .homepage-hero-content .links-container .hero-link {
     width: 100%;
     text-align: center;
+  }
+  
+  .homepage-faq-hero img {
+    width: 100%;
   }
 }
 
