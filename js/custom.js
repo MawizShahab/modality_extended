@@ -106,6 +106,10 @@ $(document).ready(function () {
     const answer = $(this).next(".answer");
     const icon = $(this).find(".toggle-icon");
 
+    // Close all other answers
+    $(".answer").not(answer).slideUp();
+    $(".toggle-icon").not(icon).text("+");
+
     if (answer.is(":visible")) {
       answer.slideUp();
       icon.text("+");
