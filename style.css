@@ -1585,6 +1585,10 @@ img.password-eye {
   div.success .success-modal {
     width: 100% !important;
   }
+
+  .registration-container.sign-up {
+    background-size: contain;
+  }
 }
 
 /* Registration Screens End */
