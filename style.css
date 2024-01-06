@@ -1501,7 +1501,9 @@ section.homepage-faq-main-wrapper {
 
 /* Registration Screens */
 
-.registration-modal .modal-content {
+.registration-modal .modal-content,
+.success-modal .modal-content,
+.login-modal .modal-content {
   background: var(--body-background);
 }
 
@@ -1518,12 +1520,70 @@ section.homepage-faq-main-wrapper {
   background-image: url(./images/signup-bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: 70% 90%;
 }
+
+.registration-container.login {
+  background-image: url(./images/login-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.registration-container.success {
+  background-image: url(./images/success.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+}
+
+div.login .login-modal,
+div.success .success-modal {
+  width: 550px !important;
+}
+
+img.password-eye {
+  max-width: 25px;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+
+/* .registration-screens-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
 
 @media screen and (max-width: 768px) {
   .registration-modal {
     max-width: 100%;
+  }
+
+  .login .registration-modal {
+    width: 100%;
+  }
+
+  img.password-eye {
+    right: 3%;
+  }
+
+  div.login .login-modal,
+  div.success .success-modal {
+    width: 100% !important;
   }
 }
 
