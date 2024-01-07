@@ -99,10 +99,10 @@ $(document).ready(function () {
   }
 });
 
-/* FAQ Toggle */
+/* General FAQ Toggle */
 
 $(document).ready(function () {
-  $(".question").click(function () {
+  $(".general-faq .question").click(function () {
     const answer = $(this).next(".answer");
     const icon = $(this).find(".toggle-icon");
 
@@ -115,7 +115,53 @@ $(document).ready(function () {
       icon.text("+");
     } else {
       answer.slideDown();
-      icon.text("X");
+      icon.text("-");
+    }
+  });
+});
+
+/* Homepage  FAQ Toggle */
+
+$(document).ready(function () {
+  $(".homepage-faq .question").click(function () {
+    const currentQuestion = $(this).find(".lg-p");
+    const answer = $(this).next(".answer");
+    const icon = $(this).find(".toggle-icon");
+    const heroImage = $(this).closest(".homepage-faq-main-wrapper").find(".homepage-faq-hero img");
+
+    // Close all other answers and revert font size class
+    $(".answer").not(answer).slideUp();
+    $(".toggle-icon").not(icon).text("+");
+    $(".lg-p.xl-p").not(currentQuestion).removeClass("xl-p");
+
+    // Toggle font size class for the clicked answer
+    currentQuestion.toggleClass("xl-p");
+
+    // Toggle image source based on FAQ item
+    if (answer.is(":visible")) {
+      answer.slideUp();
+      icon.text("+");
+      // Reset image to the default when answer is closed with fadeOut
+      heroImage.fadeOut(300, function () {
+        heroImage.attr("src", "./images/make-money-hero.png").fadeIn(300);
+      });
+    } else {
+      answer.slideDown();
+      icon.text("-");
+      // Update image based on the FAQ item with fadeIn
+      if (currentQuestion.text() === "Make More Money") {
+        heroImage.fadeOut(300, function () {
+          heroImage.attr("src", "./images/make-money-hero.png").fadeIn(300);
+        });
+      } else if (currentQuestion.text() === "Be Yourself") {
+        heroImage.fadeOut(300, function () {
+          heroImage.attr("src", "./images/make-money-hero-2.png").fadeIn(300);
+        });
+      } else if (currentQuestion.text() === "Train As You Go") {
+        heroImage.fadeOut(300, function () {
+          heroImage.attr("src", "./images/make-money-hero-3.png").fadeIn(300);
+        });
+      }
     }
   });
 });
