@@ -604,6 +604,10 @@ button#closeNotificationBtn {
   width: 100%;
 }
 
+.sponsors img {
+  max-width: 20%;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 64px;
@@ -621,7 +625,7 @@ button#closeNotificationBtn {
   }
 
   .xl-p {
-    font-size: 32px;
+    font-size: 32px !important;
     font-weight: bold;
     color: #000;
   }
@@ -1280,30 +1284,32 @@ span.toggle-icon {
   background: #000;
 }
 
-.hero-link.green {
-  background: #bfe494;
+.hero-link.white {
+  /* background: #bfe494; */
+  background: transparent;
 }
 
 .hero-link.black a {
-  color: #bfe494;
+  /* color: #bfe494; */
+  color: #fff;
 }
 
-.hero-link.green a {
+.hero-link.white a {
   color: #000;
 }
 
 .homepage-hero-image {
-  padding: 20px 80px;
-  border: 2px solid #000;
+  /* padding: 20px 80px; */
+  /* border: 2px solid #000;
   border-radius: 20px;
   background: #f2eeff;
-  align-self: flex-start;
+  align-self: flex-start; */
 }
 
 section.sponsors-section-wrapper {
   border-top: 3px solid #000;
   border-bottom: 3px solid #000;
-  background: #e4f5d0;
+  background: #f6ffed;
 }
 
 .sponsors {
@@ -1325,36 +1331,36 @@ section.homepage-faq-main-wrapper {
 }
 
 .homepage-faq-hero.individual {
-  padding: 20px 80px;
-  border: 2px solid #000;
+  /* padding: 20px 80px; */
+  /* border: 2px solid #000;
   border-radius: 20px;
-  background: #ffefee;
+  background: #ffefee; */
 }
 
 .homepage-hero-image-custom-wrapper {
   align-self: flex-start;
-  border-radius: 50px;
+  /* border-radius: 50px;
   border-top: 2px solid #000;
-  border-right: 2px solid #000;
+  border-right: 2px solid #000; */
 }
 
 .homepage-hero-image-custom-wrapper-two {
   align-self: flex-start;
-  border-radius: 50px;
+  /* border-radius: 50px;
   border-top: 2px solid #000;
-  border-left: 2px solid #000;
+  border-left: 2px solid #000; */
 }
 
 .homepage-hero-image-custom {
-  border-top: 15px solid #f2eeff;
+  /* border-top: 15px solid #f2eeff;
   border-right: 15px solid #f2eeff;
-  border-radius: 50px;
+  border-radius: 50px; */
 }
 
 .homepage-hero-image-custom-two {
-  border-top: 15px solid #f2eeff;
+  /* border-top: 15px solid #f2eeff;
   border-left: 15px solid #f2eeff;
-  border-radius: 50px;
+  border-radius: 50px; */
 }
 
 .benefits-content {
@@ -1385,6 +1391,10 @@ section.homepage-faq-main-wrapper {
   justify-content: center;
 }
 
+.benefits-logo img {
+  max-width: 50%;
+}
+
 .benefits-logo p {
   text-align: center;
 }
@@ -1403,6 +1413,54 @@ section.homepage-faq-main-wrapper {
 .homepage-hero-image-custom img,
 .homepage-hero-image-custom-two img {
   width: 100%;
+}
+
+.newsletter-container-main {
+  /* background-image: url(./images/newsletter-hero.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1; */
+  position: relative;
+}
+
+.newsletter-input-container {
+  width: 60%;
+  position: absolute;
+  bottom: 20%;
+}
+
+.newsletter-field {
+  padding: 0 20px;
+  height: 65px;
+  border: 3px solid #000;
+  border-radius: 20px 50px 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.newsletter-field input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.newsletter-label p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.newsletter-field button {
+  background: transparent;
+  border: 0;
+  border-left: 3px solid #000 !important;
+  outline: 0;
+  height: 65px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
 /* Homepage Screen Design End */
@@ -1438,17 +1496,8 @@ section.homepage-faq-main-wrapper {
     gap: 50px;
   }
 
-  .homepage-hero-image-custom {
-    border-top: 15px solid #f2eeff;
-    border-right: 15px solid #f2eeff;
-    border-radius: 30px;
-  }
-
   .homepage-hero-image-custom-wrapper {
     align-self: flex-start;
-    border-radius: 30px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
   }
 
   .benefits-content .hero-label {
@@ -1470,15 +1519,8 @@ section.homepage-faq-main-wrapper {
 
   .homepage-hero-image-custom-wrapper-two {
     align-self: flex-start;
-    border-radius: 30px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
   }
-  .homepage-hero-image-custom-two {
-    border-top: 15px solid #f2eeff;
-    border-left: 15px solid #f2eeff;
-    border-radius: 30px;
-  }
+
   .homepage-hero-content .links-container {
     display: flex;
     gap: 25px;
@@ -1494,6 +1536,30 @@ section.homepage-faq-main-wrapper {
 
   .homepage-faq-hero img {
     width: 100%;
+  }
+
+  .sponsors img {
+    max-width: 100%;
+  }
+
+  .question .xl-p {
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .newsletter-input-container {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+  }
+  .newsletter-field {
+    padding: 0 20px;
+    height: 50px;
+  }
+
+  .newsletter-field button {
+    height: 50px;
   }
 }
 
@@ -1560,13 +1626,6 @@ img.password-eye {
   top: 25%;
   right: 2%;
 }
-
-/* .registration-screens-wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 
 @media screen and (max-width: 768px) {
   .registration-modal {
