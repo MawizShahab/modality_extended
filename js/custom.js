@@ -143,30 +143,18 @@ $(document).ready(function () {
     if (answer.is(":visible")) {
       answer.slideUp();
       icon.text("+");
-      // Reset image to the default when answer is closed with fadeOut
-      heroImage.fadeOut(300, function () {
-        heroImage.attr("src", "./images/make-money-hero.png");
-        heroImage.fadeIn(300);
-      });
+      // Reset image to the default when answer is closed
+      heroImage.attr("src", "./images/make-money-hero.png");
     } else {
       answer.slideDown();
       icon.text("-");
-      // Update image based on the FAQ item with fadeIn
+      // Update image based on the FAQ item
       if (currentQuestion.text() === "Make More Money") {
-        heroImage.fadeOut(300, function () {
-          heroImage.attr("src", "./images/make-money-hero.png");
-          heroImage.fadeIn(300);
-        });
+        heroImage.attr("src", "./images/make-money-hero.png");
       } else if (currentQuestion.text() === "Be Yourself") {
-        heroImage.fadeOut(300, function () {
-          heroImage.attr("src", "./images/make-money-hero-2.png");
-          heroImage.fadeIn(300);
-        });
+        heroImage.attr("src", "./images/make-money-hero-2.png");
       } else if (currentQuestion.text() === "Train As You Go") {
-        heroImage.fadeOut(300, function () {
-          heroImage.attr("src", "./images/make-money-hero-3.png");
-          heroImage.fadeIn(300);
-        });
+        heroImage.attr("src", "./images/make-money-hero-3.png");
       }
     }
   });
