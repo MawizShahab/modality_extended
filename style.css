@@ -1675,3 +1675,76 @@ img.password-eye {
 }
 
 /* Registration Screens End */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-container {
+    padding: 20px 35px;
+  }
+
+  .hero-label p {
+    /* font-size: 54px; */
+    line-height: 60px;
+    color: #000;
+  }
+
+  /* .header-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  } */
+
+  .sponsors img {
+    max-width: 15%;
+  }
+
+  .homepage-faq-main-container,
+  .homepage-hero-section {
+    align-items: center;
+    flex-direction: column !important;
+    gap: 50px;
+  }
+
+  .homepage-hero-content {
+    padding-top: 5% !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .homepage-hero-image-custom-wrapper-two {
+    align-self: center;
+  }
+
+  .footer-container {
+    padding: 20px 35px 50px 35px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-extended-links .links {
+    gap: 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  div#navbarNav {
+    display: block !important;
+  }
+
+  .categories ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .extented-link.simple {
+    padding-left: 0;
+  }
+}
