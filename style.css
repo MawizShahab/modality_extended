@@ -1226,9 +1226,9 @@ span.toggle-icon {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .extented-link.round {
+  /* .extented-link.round {
     margin-left: -5px;
-  }
+  } */
 
   span.toggle-icon {
     font-size: 18px;
@@ -1463,6 +1463,14 @@ section.homepage-faq-main-wrapper {
   padding-left: 20px;
 }
 
+.extended-header .categories-container {
+  justify-content: flex-end;
+}
+
+.sponsors-mobile {
+  display: none;
+}
+
 /* Homepage Screen Design End */
 
 /* Homepage Screen Design Mobile */
@@ -1477,10 +1485,10 @@ section.homepage-faq-main-wrapper {
     padding-top: 0;
   }
   .hero-label p {
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 55px;
+    line-height: 70px;
     color: #000;
-    font-weight: bold;
+    font-weight: normal;
   }
   .hero-link a {
     font-size: 12px;
@@ -1560,6 +1568,22 @@ section.homepage-faq-main-wrapper {
 
   .newsletter-field button {
     height: 50px;
+  }
+
+  .sponsors .one,
+  .sponsors .two,
+  .sponsors .three {
+    display: none;
+  }
+
+  .sponsors-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sponsors-mobile img {
+    width: 25%;
   }
 }
 
