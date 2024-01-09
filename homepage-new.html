@@ -44,16 +44,46 @@
       <nav class="navbar navbar-expand-lg rm-pd extended-nav">
         <div class="header-logo col-md-3 rm-pd">
           <h1><a href="#">Modality</a></h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="navbarToggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-
-        <div class="extended-category col-md-3 rm-pd">
+        <div
+          class="collapse navbar-collapse categories-container col-md-6 rm-pd"
+          id="navbarNav"
+        >
+          <nav class="categories">
+            <ul class="navbar-nav list-inline">
+              <li class="list-inline-item">
+                <div class="extented-link simple">
+                  <a href="#"><h4>FAQs</h4></a>
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="extented-link round">
+                  <a href="#"><h4>Practioner Login</h4></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="extended-category col-md-3 rm-pd">
           <div class="extented-link simple">
             <a href="#"><h4>FAQs</h4></a>
           </div>
           <div class="extented-link round">
             <a href="#"><h4>Practioner Login</h4></a>
           </div>
-        </div>
+        </div> -->
       </nav>
     </header>
 
@@ -81,11 +111,20 @@
     <section class="sponsors-section-wrapper main-container">
       <div class="sponsors-section-container">
         <div class="sponsors">
-          <img src="./images/stanford-1.png" alt="stanford" />
-          <img src="./images/nsf-1.png" alt="nsf" />
-          <img src="./images/gw_primary_blk-1.png" alt="university" />
-          <img src="./images/mgh-1.png" alt="mgh" />
-          <img src="./images/harvard-01-01-1.png" alt="harvard" />
+          <div class="sponsors-mobile">
+            <img src="./images/stanford-1.png" alt="stanford" />
+            <img src="./images/nsf-1.png" alt="nsf" />
+            <img src="./images/gw_primary_blk-1.png" alt="university" />
+          </div>
+          <img class="one" src="./images/stanford-1.png" alt="stanford" />
+          <img class="two" src="./images/nsf-1.png" alt="nsf" />
+          <img
+            class="three"
+            src="./images/gw_primary_blk-1.png"
+            alt="university"
+          />
+          <img class="four" src="./images/mgh-1.png" alt="mgh" />
+          <img class="five" src="./images/harvard-01-01-1.png" alt="harvard" />
         </div>
       </div>
     </section>
